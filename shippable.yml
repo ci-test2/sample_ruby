@@ -17,5 +17,5 @@ env:
 notifications:
      email:
          recipients:
-             - exampleone@org.com
-             - exampletwo@org.com
+             - varsha@shippable.com
+             - test12.ci34@gmail.com
