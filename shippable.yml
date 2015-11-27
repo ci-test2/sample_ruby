@@ -27,3 +27,4 @@ notifications:
              - varsha@shippable.com
              - test12.ci34@gmail.com
 
+archive: true
