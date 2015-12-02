@@ -22,8 +22,15 @@ after_success:
   - git push -f git@heroku.com:sample-ruby-citest2-prod.git master
   
 notifications:
-     email:
-         recipients:
-             - varsha@shippable.com
-             - test12.ci34@gmail.com
+  email:
+    recipients:
+      - varsha@shippable.com
+      - test12.ci34@gmail.com
+    on_success: change
+    on_failure: always
+  irc:
+    #pull_requests: true
+    channels:
+      - "chat.freenode.net#test-irc"
 
+archive: true 
