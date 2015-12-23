@@ -1,16 +1,16 @@
 language: ruby
 rvm:
   - 1.8.7
- # - 1.9.2
-  #- 1.9.3
-#  - 2.0.0-p353
- # - 2.1.0
+  - 1.9.2
+  - 1.9.3
+  - 2.0.0-p353
+  - 2.1.0
   - 2.1.1
-  #- 2.1.2
+  - 2.1.2
   - jruby
-  #- jruby-19mode # JRuby in 1.9 mode
-  #- jruby-head
-  #- ruby-head
+  - jruby-19mode # JRuby in 1.9 mode
+  - jruby-head
+  - ruby-head
   - ree
   
 env:
@@ -23,13 +23,8 @@ after_success:
   
 notifications:
   email:
-    recipients:
-      - varsha@shippable.com
-      - test12.ci34@gmail.com
-    on_success: change
-    on_failure: always
+    - test12.ci34@gmail.com
   irc:
-    pull_requests: true
     channels:
       - "chat.freenode.net#test-irc"
 
