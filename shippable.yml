@@ -12,7 +12,7 @@ rvm:
  # - ruby-head
 #  - ree
   
-build_image: drydock/u12rubpls:tip
+build_image: drydock/u14rubpls:tip
 
 env:
   global:
