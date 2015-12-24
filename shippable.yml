@@ -13,6 +13,8 @@ rvm:
   - ruby-head
   - ree
   
+build_image: drydock/u12rub:tip
+  
 env:
   global:
     - CI_REPORTS=shippable/testresults COVERAGE_REPORTS=shippable/codecoverage
